@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoangVux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Hoang Vu</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm...">
+                <img src="img/search.png" alt="Search Icon">
+            </div>
+            <nav class="nav">
+                <a href="#">Trang chủ</a>
+                <a href="#">Menu</a>
+                <a href="#">Hệ thống cửa hàng</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+            </nav>
+        </header>
+
+        <!-- Main Section -->
+        <section class="main">
+            <h1 class="section-title">MẪU BÁNH BÁN CHẠY</h1>
+            <div class="categories">
+                <span class="category active" data-category="birthday">Bánh sinh nhật</span>
+                <span class="category" data-category="bread">
+                    <p>Bánh mì & Bánh mặn</p>
+                    <img class="down" src="img/down.png" alt="Down Arrow">
+                </span>
+                <span class="category" data-category="cookies">
+                    <p>Cookies & Minicake</p>
+                    <img class="down" src="img/down.png" alt="Down Arrow">
+                </span>
+                <span class="category" data-category="teabreak">
+                    <p>Teabreak</p>
+                    <img class="down" src="img/down.png" alt="Down Arrow">
+                </span>
+            </div>
+            <div class="teabreak-info" style="display: none;">
+              <div class="teabreak-options">
+                  <button class="teabreak-btn active" data-option="teabreak">Teabreak</button>
+                  <button class="teabreak-btn" data-option="school">Bánh trường học</button>
+                  <button class="teabreak-btn" data-option="cafe">Quán cafe</button>
+                  <button class="teabreak-btn" data-option="supermarket">Siêu thị nhà hàng</button>
+              </div>
+          </div>
+            <div class="products">
+                <div class="product-card" data-name="Green tea cake" data-price="720.000₫" data-desc="Bánh làm từ 3 lớp gato trắng xen giữa 3 lớp kem tươi" data-img="img/120.jpg">
+                    <img src="img/120.jpg" alt="Green tea cake">
+                    <h3>Green tea cake</h3>
+                    <p>Bánh làm từ 3 lớp gato trắng xen giữa 3 lớp kem tươi</p>
+                    <div class="price-btn">
+                        <span>720.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Bánh nho khoai" data-price="20.000₫" data-desc="Bên ngoài giòn, bên trong mềm" data-img="img/1711705431380-NHO_KHOAI.jpg">
+                    <img src="img/1711705431380-NHO_KHOAI.jpg" alt="Bánh nho khoai">
+                    <h3>Bánh nho khoai</h3>
+                    <p>Bên ngoài giòn, bên trong mềm, thom, mong nuoc</p>
+                    <div class="price-btn">
+                        <span>20.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Macaron" data-price="45.000₫" data-desc="Bánh sô-cô-la mềm mịn với lớp kem phủ béo ngậy" data-img="img/images.jpg">
+                    <img src="img/images.jpg" alt="Macaron">
+                    <h3>Macaron</h3>
+                    <p>Bánh sô-cô-la mềm mịn với lớp kem phủ béo ngậy</p>
+                    <div class="price-btn">
+                        <span>45.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Set menu tiệc trà" data-price="125.000₫" data-desc="bao gồm các loại bánh ngọt mini, trà cà phê,..." data-img="img/cach-bay-ban-tiec-tra-vua-sang-trong-vua-de-dang-lai-dep-mat-avt-1200x676.jpg">
+                    <img src="img/cach-bay-ban-tiec-tra-vua-sang-trong-vua-de-dang-lai-dep-mat-avt-1200x676.jpg" alt="Set menu tiệc trà">
+                    <h3>Set menu tiệc trà</h3>
+                    <p>bao gồm các loại bánh ngọt mini, trà cà phê,...</p>
+                    <div class="price-btn">
+                        <span>125.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Moka Cake" data-price="400.000₫" data-desc="Bánh ngọt thơm ngon với nhân sô-cô-la béo ngậy" data-img="img/moka-cake.png">
+                    <img src="img/moka-cake.png" alt="Moka Cake">
+                    <h3>Moka Cake</h3>
+                    <p>Bánh ngọt thơm ngon với nhân sô-cô-la béo ngậy</p>
+                    <div class="price-btn">
+                        <span>400.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Baguette" data-price="13.000₫" data-desc="Bánh mì Pháp cổ điển, thích hợp để làm bánh sandwich" data-img="img/3bae7f05-ba4c-4ede-8e1f-d3f112a46e76--2014-0218_genius_william-alexander-4-hour-baguette-745.jpg">
+                    <img src="img/3bae7f05-ba4c-4ede-8e1f-d3f112a46e76--2014-0218_genius_william-alexander-4-hour-baguette-745.jpg" alt="Baguette">
+                    <h3>Baguette</h3>
+                    <p>Bánh mì Pháp cổ điển, thích hợp để làm bánh sandwich</p>
+                    <div class="price-btn">
+                        <span>13.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Lemon Drizzle Cake" data-price="70.000₫" data-desc="Bánh ngọt ngào và thơm ngon với lớp phủ chanh" data-img="img/1400x919-Brown-butter-lemon--thyme-drizzle-cake--90d04bca-c512-4565-b147-34cb3d2b5611-0-1400x919.jpg">
+                    <img src="img/1400x919-Brown-butter-lemon--thyme-drizzle-cake--90d04bca-c512-4565-b147-34cb3d2b5611-0-1400x919.jpg" alt="Lemon Drizzle Cake">
+                    <h3>Lemon Drizzle Cake</h3>
+                    <p>Bánh ngọt ngào và thơm ngon với lớp phủ chanh</p>
+                    <div class="price-btn">
+                        <span>70.000₫</span>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Coconut - dừa" data-price="40.000₫" data-desc="Bánh quy giòn, thơm với vị dừa hương vanni" data-img="img/Home-Banner3-sanphamdua.jpg">
+                    <img src="img/Home-Banner3-sanphamdua.jpg" alt="Coconut - dừa">
+                    <h3>Coconut - dừa</h3>
+                    <p>Bánh quy giòn, thơm với vị dừa hương vanni</p>
+                    <div class="price-btn">
+                        <span>40.000₫</span>
+                    </div>
+                </div>
+            </div>
+            <button class="load-more">XEM THÊM</button>
+        </section>
+
+        <!-- Product Detail Modal -->
+        <div class="modal" id="product-modal" style="display: none;">
+          <div class="modal-content">
+              <span class="close-btn">×</span>
+              <div class="modal-body">
+                  <img id="modal-img" src="" alt="Product Image">
+                  <div class="modal-details">
+                      <h2 id="modal-name"></h2>
+                      <div class="modal-info">
+                          <p><strong>Mô tả:</strong> <span id="modal-desc"></span></p>
+                          <p><strong>Giá:</strong> <span id="modal-price" class="modal-price"></span></p>
+                      </div>
+                      <div class="modal-actions">
+                          <div class="quantity-selector">
+                              <button class="quantity-btn" id="decrease">-</button>
+                              <input type="number" id="quantity" value="1" min="1">
+                              <button class="quantity-btn" id="increase">+</button>
+                          </div>
+                          <button class="buy-btn">Mua ngay</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-section contact-info">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <p>Số 09 Trần Thái Tông, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội</p>
+                <p>0961452578</p>
+                <p>anhhoabakery1@gmail.com</p>
+            </div>
+            <div class="footer-section business-hours">
+                <h3>GIỜ MỞ CỬA</h3>
+                <p>Thứ hai - Thứ sáu: 8am - 6pm<br>Thứ bảy: 9am - 5pm</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>LIÊN KẾT</h3>
+                <p>AnhHoa Bakery Official</p>
+                <p>anhhoa_bakery</p>
+                <p>anhhoa.bakery.fr</p>
+            </div>
+            <div class="footer-section news">
+                <h3>ĐĂNG KÝ NHẬN ƯU ĐÃI</h3>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Email của bạn">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
