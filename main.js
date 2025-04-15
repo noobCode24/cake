@@ -1,13 +1,17 @@
 // Category tab interactivity
+// ấy tất cả các phần tử HTML có lớp .category (4 danh mục).
 const categories = document.querySelectorAll('.category');
 const teabreakInfo = document.querySelector('.teabreak-info');
+// Tạo lớp phủ
 let teabreakOverlay = document.createElement('div');
 teabreakOverlay.className = 'teabreak-info-overlay';
 document.body.appendChild(teabreakOverlay);
 
+// gắn sự kiện click cho mỗi danh mục (tab).
 categories.forEach(tab => {
+    console.log(tab)
     tab.addEventListener('click', () => {
-        const isTeabreak = tab.dataset.category === 'teabreak';
+        const isTeabreak = tab.dataset.category === 'teabreak'; //neu la teabreak thi gan vao bien isTeabreak
         const isTeabreakVisible = teabreakInfo.style.display === 'block';
 
         if (!isTeabreak || !isTeabreakVisible) {
@@ -66,21 +70,18 @@ const modalName = document.getElementById('modal-name');
 const modalDesc = document.getElementById('modal-desc');
 const modalPrice = document.getElementById('modal-price');
 const closeBtn = document.querySelector('.close-btn');
-const quantityInput = document.getElementById('quantity');
-const increaseBtn = document.getElementById('increase');
-const decreaseBtn = document.getElementById('decrease');
-const buyBtn = document.querySelector('.buy-btn');
 
 productCards.forEach(card => {
+    console.log(card)
     card.addEventListener('click', (e) => {
-        if (e.target.closest('.teabreak-info')) return;
+        console.log(e)
+        // if (e.target.closest('.teabreak-info')) return;
 
         modalImg.src = card.dataset.img;
         modalName.textContent = card.dataset.name;
         modalDesc.textContent = card.dataset.desc;
         modalPrice.textContent = card.dataset.price;
 
-        quantityInput.value = 1;
 
         modal.style.display = 'flex';
     });
@@ -94,19 +95,4 @@ modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = 'none';
     }
-});
-
-increaseBtn.addEventListener('click', () => {
-    quantityInput.value = parseInt(quantityInput.value) + 1;
-});
-
-decreaseBtn.addEventListener('click', () => {
-    if (parseInt(quantityInput.value) > 1) {
-        quantityInput.value = parseInt(quantityInput.value) - 1;
-    }
-});
-
-buyBtn.addEventListener('click', () => {
-    alert(`Bạn đã mua ${quantityInput.value} ${modalName.textContent}!`);
-    modal.style.display = 'none';
 });

@@ -1,6 +1,8 @@
+/* custom tong quat cua mot chuong trinh web */
 * {
   box-sizing: border-box;
 }
+/*<div> co width: 100px, padding: 10px, border: 2px => kich thuoc tq: 100px*/
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -8,9 +10,10 @@ body {
   margin: 0;
 }
 
+/* Tong quat cua mot than chuong trinh */
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto; /*up right bottom left || up-down left-right*/
   padding: 0 20px;
 }
 
@@ -355,51 +358,6 @@ body {
   align-items: flex-start; /* Align items to the left */
   gap: 15px; /* Reduced gap for a tighter layout */
   margin-top: 20px;
-}
-
-.quantity-selector {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.quantity-selector button {
-  background-color: #5b3236;
-  color: #ffffff;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-}
-
-.quantity-selector button:hover {
-  background-color: #ffb6c1;
-}
-
-.quantity-selector input {
-  width: 60px;
-  padding: 8px;
-  border: 1px solid #ffb6c1;
-  border-radius: 5px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  background-color: #ffffff;
-}
-
-/* Remove default number input arrows with standard and vendor-prefixed properties */
-.quantity-selector input {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
-}
-
-.quantity-selector input::-webkit-outer-spin-button,
-.quantity-selector input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .buy-btn {
